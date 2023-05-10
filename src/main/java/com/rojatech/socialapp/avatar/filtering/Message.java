@@ -1,12 +1,14 @@
 package com.rojatech.socialapp.avatar.filtering;
 
+import com.fasterxml.jackson.annotation.JsonFilter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-@JsonIgnoreProperties("field1")
+//@JsonIgnoreProperties("field1")
+@JsonFilter("MessageFilter")
 public class Message {
 	
 	private String field1;
-	@JsonIgnore
+	//@JsonIgnore
 	private String password;
 	private String field3;
 	
